@@ -1,0 +1,53 @@
+.formulario_section {
+  margin: 2rem;
+  text-align: center;
+}
+
+.formulario_libros {
+  display: inline-block;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formulario_libros .form-group {
+  margin-bottom: 20px;
+}
+
+.formulario_libros label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario_libros input[type="text"],
+.formulario_libros input[type="date"],
+.formulario_libros textarea,
+.formulario_libros input[type="file"],
+.formulario_libros button {
+  width: calc(100% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+}
+
+.formulario_libros textarea {
+  color: black;
+  height: 120px;
+}
+
+.formulario_libros button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario_libros button:hover {
+  background-color: #45a049;
+}

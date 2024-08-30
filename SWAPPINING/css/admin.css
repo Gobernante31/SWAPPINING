@@ -1,0 +1,54 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+td {
+  background-color: #fff;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para botón de eliminar */
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  display: table-cell;
+}
+
+
+.imagen_admin {
+  width: 100px;
+  /* Ancho deseado para la imagen */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  border-radius: 5px;
+  /* Bordes redondeados */
+}

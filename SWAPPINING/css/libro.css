@@ -1,0 +1,599 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f1f3ff;
+}
+
+.fondo {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background: whitesmoke;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+  transition: 0.5s ease;
+
+}
+
+.fondo:hover {
+  width: 500px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  color: #1183d0;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  min-height: 70px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url(../images/img/fondoAzul.jpg);
+
+}
+
+.empresa:hover {
+  color: #05177f;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.empresa {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: #05177f;
+}
+
+@media (max-width:700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+
+  .c2 {
+    flex-direction: column;
+  }
+}
+
+#bd {
+  margin-right: 20px;
+  font-family: sans-serif;
+}
+
+#bd {
+  padding: 8px;
+  border-radius: 15px;
+  border: 0;
+  outline: none;
+}
+
+.contenidodavid {
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenidodavid .cajas {
+  box-sizing: content-box;
+}
+
+.c1 {
+  text-align: center;
+  border: none;
+  margin-left: 100px;
+  width: 320px;
+  background: #fff;
+
+}
+
+.c1 .imagen-perfil {
+  border-radius: 50%;
+  border: 10px solid #1183d0;
+  margin-top: 30px;
+  width: 150px;
+
+}
+
+.stars i {
+  color: #e6e6e6;
+  font-size: 17px;
+  cursor: pointer;
+  transition: color 0.2 ease;
+}
+
+.stars i.active {
+  color: #ff9c1a;
+}
+
+@media(min-width: 768px) and (max-width: 991.98px) {
+  .cajas .c1 {
+    z-index: 99;
+  }
+}
+
+.p1 {
+  border: none;
+  margin-top: 10px;
+  margin-left: 35px;
+  width: 250px;
+  height: 90px;
+}
+
+.c1 .p1 {
+  font-family: sans-serif;
+  color: grey;
+}
+
+.imagen-red {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.boton_inter {
+  color: white;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.btn_1 {
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn_1 {
+  background: #1183d0;
+  color: white;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.btn_1:hover {
+  box-shadow: 0 0 40px 40px midnightblue inset;
+}
+
+.c2 {
+  text-align: center;
+  border: none;
+  margin-top: 5px;
+  margin-right: 100px;
+  width: 750px;
+  background: #fff;
+}
+
+.slider-frame {
+  width: 420px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  95% {
+    margin-left: -300%;
+  }
+
+}
+
+.c2 .caja_contenedora-3 {
+  margin: 5px;
+  padding: 1px;
+}
+
+.caja_contenedora-3 {
+  box-sizing: content-box;
+  height: 370px;
+}
+
+.imagen_contenida {
+  width: 280px;
+  height: 370px;
+  margin-left: 20px;
+  float: left;
+}
+
+
+.titulo_contenido {
+  background: white;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 280px;
+  padding: 1px;
+  height: 55px;
+  text-align: left;
+  color: #022d58;
+
+}
+
+.contenido_caja-3 {
+  color: rgb(111, 111, 111);
+  padding: 10px;
+}
+
+/* comentarios */
+.comments {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-form h3 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+.comment-form form input,
+.comment-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment-form form button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.comment-form form button:hover {
+  background-color: #0056b3;
+}
+
+/*footer*/
+
+.footer {
+  background-image: url(../images/img/Mesa\ de\ trabajo\ 1.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+.container-f {
+  max-width: 12000px;
+  margin: auto 0;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.link {
+  width: 400px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: #D6D6E2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 17px;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.link a:hover {
+  color: #00C3FF;
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #00C3FF;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.correo {
+  padding: 8px;
+  background: aliceblue;
+}
+
+.enviar {
+  color: midnightblue;
+  margin-top: 5px;
+  background: #00C3FF;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: #00a2ff;
+}
+
+hr {
+  border: 1px solid #5F5F6E;
+  margin: 35px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text p {
+  font-size: 15px;
+  color: #B7B8BE;
+}
+
+@media (max-width:768px) {
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* LIBRO CONTAINER */
+.book-container {
+  margin-block: 1rem;
+  height: max-content;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.book-image-title {
+  position: relative;
+  overflow: hidden;
+}
+
+.book-image-title img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  transition: transform 0.3s ease;
+}
+
+.book-image-title:hover img {
+  transform: scale(1.1);
+}
+
+.book-info {
+  color: black;
+  padding: 3rem;
+}
+
+.book-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.book-details {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+/* libros del usuario */
+.libros-usuario {
+  margin-top: 20px;
+}
+
+.libros-usuario h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.book-image {
+  flex: 1;
+}
+
+.book-image img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+}
+
+.book-details {
+  flex: 2;
+  padding: 10px;
+}
+
+.book-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.book-author,
+.book-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,61 @@
+/* chatusuarios.css */
+.container_usuarios {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main_chats {
+  justify-content: center;
+  margin-block: 4rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Estilos para cada usuario */
+.usuario {
+  display: flex;
+  align-items: center;
+}
+
+.usuario img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilos para el ícono de chat */
+.chat-icon {
+  text-align: center;
+}
+
+.chat-icon i {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.chat-icon i:hover {
+  color: #0056b3;
+}

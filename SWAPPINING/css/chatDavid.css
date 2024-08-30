@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    max-height: 470px;
+}
+
+header{
+    text-align: center;
+    background-image: url(../img/fondoAzul.jpg);
+    background-repeat: no-repeat;
+}
+
+/* fa solid es la flecha de regreso */
+
+.fa-solid{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.fa-solid:active{
+    color: white;
+}
+
+.imagen-perfil{
+    width: 70px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.imagen-perfil:hover{
+    border: 2px solid ;
+    color: #d84a2e;
+}
+
+label{
+    color: white;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+/* fas es el logo de enviar mensaje */
+
+.mensaje{
+    position: absolute;
+    bottom: 37px;
+    display: flex;
+}
+
+.fas{
+    position: absolute;
+    bottom: 48px;
+    right: 10px;
+    color: rgb(148, 116, 148);
+    font-size: 20px;
+}
+
+.fas:hover{
+    color: #00C3FF;
+}
+
+/* aqui se comienza con el teclado */
+
+.enviolibro{
+    display: flex;
+    margin: 0;
+
+}
+
+.fa-book{
+    position: absolute;
+    font-size: 24px;
+    top: 360px;
+    color: cadetblue;
+}
+
+.fa-book:hover{
+    color: goldenrod;
+}
+
+.envio{
+    position: absolute;
+    bottom: 70px;
+    background: transparent;
+    border: none;
+}
+
+input{
+    border: 2px solid #00C3FF;
+    font-size: 17px;
+    outline: none;
+    background: #f1f3ff;
+    width: 255px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+i{
+    font-size: 20px;
+}
+
+/* aqui diseño el contenido */
+
+.contenido{
+    height: 335px;
+    padding: 3px;
+}
+
+.contenido{
+    background-image: url(../img/fondoblanco.jpg);
+    color: #f1f3ff;
+}
+
+.relleno{
+    height: 335px;
+    width: auto;
+    background-color: #f1f3ff;
+}
+  

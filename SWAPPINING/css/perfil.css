@@ -1,0 +1,669 @@
+/* Reset del css */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navegacion y Header */
+
+header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/Mesa_de_trabajo_2.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+nav {
+  height: 100px;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.bar-btn {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(79, 0, 116, 0.95);
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+
+.nav-menu li a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  color: #E83E1C;
+  transition: 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked~nav.menu {
+  height: 100vh;
+}
+
+#check:checked~nav.menu li {
+  display: block;
+}
+
+.container {
+  max-width: none;
+  margin: 30px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-header {
+  margin-right: 0px;
+}
+
+.text-header h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.text-header p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.btn-a {
+  display: inline-block;
+  margin: 35px 0px;
+  padding: 10px 25px;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.btn-a:hover {
+  background-color: #1565c0;
+}
+
+.img-header {
+  margin-right: 0px;
+  margin-top: 5px;
+}
+
+.img-header img {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+
+  .logo {
+    margin-left: 0;
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  nav {
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .bar-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner-text {
+    flex-direction: row;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .text-header {
+    margin-right: 0px;
+  }
+
+  .text-header h1 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  .text-header p {
+    margin-top: 20px;
+  }
+
+  .btn-a {
+    margin-top: 35px;
+  }
+
+  .img-header {
+    margin-right: 50px;
+    margin-top: -50px;
+  }
+
+  .img-header img {
+    width: 300px;
+    position: relative;
+    top: 2cm;
+  }
+}
+
+/*perfil */
+/* Estilos para la lista de libros */
+.libros {
+  text-align: center;
+  padding: 20px;
+}
+
+.libros h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para el contenedor de libros */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para cada libro */
+.libro {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para la imagen del libro */
+.libro-imagen {
+  text-align: center;
+}
+
+.libro-imagen img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  /* Ajusta la altura máxima según tus necesidades */
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los detalles del libro */
+.libro-detalles {
+  margin-top: 10px;
+}
+
+.libro-detalles h4 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.libro-detalles p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.container-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url('');
+}
+
+
+/*container juan*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(2px, max-content);
+  gap: 1rem;
+  margin: 1.1rem;
+}
+
+.container-juan {
+  width: 100%;
+  display: flex;
+  padding: 1.1rem;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 300px;
+  height: 340px;
+  overflow: hidden;
+  margin-left: 1.1rem;
+  border-radius: 18px;
+  box-shadow:
+    2px 4px 20px rgba(0, 0, 0, 0.8);
+
+}
+
+.image {
+  width: 140%;
+  height: 300px;
+}
+
+.body {
+  position: absolute;
+  top: 10;
+  padding: 50px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+
+.text {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+
+
+
+/* Estilos para la sección de perfil */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 1000%;
+  /* Hace que la sección de perfil sea redonda */
+  background: rgba(255, 255, 255, 0.7);
+  /* Fondo transparente con color */
+  padding: 20px;
+}
+
+/* Estilos para la foto de perfil */
+.profile-picture {
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #5900ff;
+  border-radius: 100%;
+  /* Hace que la imagen de perfil sea redonda */
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+  background-image: url(../images/Mesa_de_trabajo_1.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 50px 0;
+}
+
+.container-f {
+  max-width: 12000px;
+  margin: auto 0;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.link {
+  width: 1000px;
+  margin-left: 200px;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: #D6D6E2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 17px;
+  color: #B7B8BE;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.link a:hover {
+  color: #00C3FF;
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #00C3FF;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: transparent;
+  padding: 14px;
+  outline: none;
+  border: 2px solid #5F5F6E;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #B7B8BE;
+}
+
+::placeholder {
+  color: #B7B8BE;
+}
+
+.btn-f {
+  background-color: #00C3FF;
+  color: #FFFFFF;
+  border: 0;
+}
+
+hr {
+  border: 1px solid #5F5F6E;
+  margin: 35px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text p {
+  font-size: 15px;
+  color: #B7B8BE;
+}
+
+@media (max-width:768px) {
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+}
+
+/*comentarios*/
+.comments {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.comments h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.comment-box {
+  margin-top: 15px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.comment p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.comment a {
+  text-decoration: none;
+  color: #0074d9;
+}
+
+.comment a:hover {
+  text-decoration: underline;
+}
+
+.comment-form h3 {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+.comment-form form input,
+.comment-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment-form form button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.comment-form form button:hover {
+  background-color: #0056b3;
+}
+
+
+/*galeria*/
+/* Estilos para la sección de galería */
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para cada imagen */
+.image {
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*notifications*/
+.header1 {
+  text-align: center;
+  padding: 12px;
+  background-image: url(../juan_david.jpeg);
+  /* Agrega la imagen de fondo que desees */
+}
+
+#profile {
+  display: none;
+}
+
+#logout,
+#view-profile,
+#edit-profile {
+  display: inline-block;
+  margin: 5px;
+}
+
+#login,
+#logout,
+#view-profile,
+#edit-profile {
+  padding: 5px 10px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#login:hover,
+#logout:hover,
+#view-profile:hover,
+#edit-profile:hover {
+  background: #2980b9;
+}
+
+/* Agrega estilos para la imagen de perfil y otros elementos según tu diseño */
+
+.avatar {
+  width: 50px; /* Ancho del avatar */
+  height: 50px; /* Altura del avatar */
+  border-radius: 50%; /* Borde redondeado para que sea un círculo */
+  overflow: hidden; /* Para recortar cualquier contenido que se extienda más allá del borde redondeado */
+  border: 2px solid #fff; /* Borde blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.avatar img {
+  width: 100%; /* Ajustar la imagen para que llene completamente el contenedor */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
+}

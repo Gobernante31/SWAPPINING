@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #f2f2f2;
+}
+
+
+.message-input {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  position: sticky;
+  bottom: 0;
+  padding: 20px 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.message-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+  border-radius: 20px;
+  margin: 0 10px;
+  color: black;
+  width: calc(100% - 100px); /* Ajusta el ancho del campo de entrada */
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px; /* Añade un margen derecho para separar el botón del campo de entrada */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: max-content;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fa-arrow-left {
+  font-size: 24px;
+  color: #333;
+  margin-left: auto;
+}
+
+.message-container {
+  height: calc(100vh - 180px);
+  overflow-y: scroll;
+  width: 70%;
+}
+
+.messages {
+  padding: 20px 0;
+}
+
+.message {
+  max-width: 50%;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.sent {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #f2f2f2;
+  color: #333;
+  align-self: flex-start;
+}
+
+.file-label {
+  cursor: pointer;
+}
+
+.file-upload {
+  display: none;
+}
+
+.informacion_perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.info_perfil {
+  display: flex;
+  align-items: center;
+}
+
+.info_perfil a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
